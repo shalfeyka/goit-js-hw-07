@@ -15,4 +15,4 @@ alt = ${item.description}/>
 </div>`).join('');
 console.log(listImages)
 imgGallery.innerHTML = listImages;
-imgGallery.addEventListener('click', showModal);
+let lightbox = new SimpleLightbox('.gallery a', {captions: true, captionSelector: 'img', captionsData: 'alt', captionDelay: 250});
